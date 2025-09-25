@@ -1,32 +1,21 @@
-class Persona {
-   private String nombre;
-   private int edad;
+class Profesor extends Persona {
+   private String especialidad;
 
-   // Constructor
-   public Persona(String nombre, int edad) {
-      this.nombre = nombre;
-      this.edad = edad;
+   public Profesor(String nombre, int edad, String especialidad) {
+      super(nombre, edad);
+      this.especialidad = especialidad;
    }
 
-   // Getters y Setters
-   public String getNombre() {
-      return nombre;
+   public String getEspecialidad() {
+      return especialidad;
    }
 
-   public void setNombre(String nombre) {
-      this.nombre = nombre;
-   }
-
-   public int getEdad() {
-      return edad;
-   }
-
-   public void setEdad(int edad) {
-      this.edad = edad;
+   public void setEspecialidad(String especialidad) {
+      this.especialidad = especialidad;
    }
 
    @Override
    public String toString() {
-      return "Nombre: " + nombre + ", Edad: " + edad;
+      return "Profesor [" + super.toString() + ", Especialidad: " + especialidad + "]";
    }
 }
