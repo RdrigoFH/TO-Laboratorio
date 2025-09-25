@@ -1,7 +1,3 @@
-public class Estudiante {
-
-}
-
 class Estudiante extends Persona {
    private String carrera;
    private double promedio;
